@@ -1,0 +1,44 @@
+
+
+ul.navmenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none; 
+    padding: 0; 
+    background-color: rgb(179, 134, 99);
+    height: 30px;
+}
+
+.navmenu li{
+    position: relative;
+}
+
+ul.navmenu li a{
+    text-decoration: none;
+    color: black;
+    padding: 7.5px;
+    text-align: center;
+}
+
+ul.submenu{
+    background-color:#b38663;
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    display: none;
+    text-align: center;
+    width: 150%;
+    top: 134%;
+    left: -19px;
+}
+
+.submenu li{
+    display: flex;
+    flex-direction: column;
+}
+
+li:hover ul.submenu{
+    display: block;
+}
