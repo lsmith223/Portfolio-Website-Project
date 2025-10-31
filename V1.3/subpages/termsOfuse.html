@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lauren Smith | Portfolio</title>
+        <link rel="stylesheet" href="../WebsitePortfolioProject.css">
+
+        <style>
+            
+            #tou-h2{
+                font-variant: small-caps;
+                background-color: #f4cddb;
+                box-shadow: 2px 2px 2px 0px #d59eb7;
+                border-radius: 20px;
+                color: #000000;
+                font-size: 24pt;
+                width: 50%;
+                margin-left: 25%;
+                margin-right: 25%;
+                padding: 2px;
+            }
+            .terms{
+                font-weight: bolder;
+                font-variant: small-caps;
+                text-shadow: 0px 0px 1px;
+                font-size: 16pt;
+            }
+            #touMain{
+                font-size: 15pt;
+                text-align: justify;
+            }
+            .tou-text{
+                padding: 20px;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="top-banner">Lauren Smith | Portfolio</div>
+            <nav>
+                <div class="hamburger" onclick="toggleHamburger()">☰ menu</div>
+                <ul class="navmenu">
+                <li><a href="../index.html">home</a></li>
+                <li><a href="aboutMe.html">about me</a>
+                    <ul class="submenu">
+                        <li><a href="emailMe.html">contact me</a></li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html">portfolio</a>
+                    <ul class="submenu">
+                        <li><a href="resume.html">resume</a></li>
+                        <li><a href="accomplishments.html">awards</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </nav>
+        </header>
+
+        <main id="touMain">
+            <h2 id="tou-h2">Terms of use</h2>
+            <p class="tou-text"><span class="terms">permitted use.</span> Users are permitted the use the entirely of this site only for its intended purposes as described on this website, and any other use is prohibited. This website is a proof of concept for a professional website created for a CS 1100 class project.</p>
+            <p class="tou-text"><span class="terms">copyright.</span> All images, media, and writing unless otherwise stated is owned by the creator of the website and is protected under copyright law.</p>
+            <p class="tou-text"><span class="terms">intellectual property.</span> All Source code created by the owner of the website is hearby entered into the public domain.</p>
+        </main>
+
+        <footer>
+            <hr>
+            <ul class="footerLinks">
+                <li><a href="https://github.com/lsmith223">github</a></li>
+                <li>|</li>
+                <li><a href="termsOfuse.html">terms of use</a></li>
+            </ul>
+            <div class="copyright">
+                <p>Created for CS1100 Web Development</p>
+                <p>Copyright &copy; 2025 Lauren Smith. Some rights reserved</p>
+            </div>
+        </footer>
+
+        <script>
+            function toggleHamburger() {
+                document.querySelector(".navmenu").classList.toggle("show");
+        }
+        </script>
+    </body>
+</html>

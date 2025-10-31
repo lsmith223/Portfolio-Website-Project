@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lauren Smith | Portfolio</title>
+        <link rel="stylesheet" href="../WebsitePortfolioProject.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="top-banner">Lauren Smith | Portfolio</div>
+            <nav>
+                <div class="hamburger" onclick="toggleHamburger()">☰ menu</div>
+                <ul class="navmenu">
+                <li><a href="../index.html">home</a></li>
+                <li><a href="aboutMe.html">about me</a>
+                    <ul class="submenu">
+                        <li><a href="emailMe.html">contact me!</a></li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html">portfolio</a>
+                    <ul class="submenu">
+                        <li><a href="resume.html">resume</a></li>
+                        <li><a href="accomplishments.html">awards</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </nav>
+        </header>
+       
+        <main>
+            <p>Portfolio</p>
+        </main>
+
+        <footer>
+            <hr>
+            <ul class="footerLinks">
+                <li><a href="https://github.com/lsmith223">github</a></li>
+                <li>|</li>
+                <li><a href="termsOfuse.html">terms of use</a></li>
+            </ul>
+            <div class="copyright">
+                <p>Created for CS1100 Web Development</p>
+                <p>Copyright &copy; 2025 Lauren Smith. Some rights reserved</p>
+            </div>
+        </footer>
+
+        <script>
+            function toggleHamburger() {
+                document.querySelector(".navmenu").classList.toggle("show");
+        }
+        </script>
+    </body>
+</html>
