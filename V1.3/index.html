@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lauren Smith | Portfolio</title>
+        <link rel="stylesheet" href="WebsitePortfolioProject.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="top-banner">Lauren Smith | Portfolio</div>
+            <nav>
+                <!--nav will be repeated on every page-->
+              <div class="hamburger" onclick="toggleHamburger()">☰ menu</div>
+              <ul class="navmenu">
+                <li><a href="index.html">home</a></li>
+                <li><a href="subpages/aboutMe.html">about me</a>
+                    <ul class="submenu">
+                        <li><a href="subpages/emailMe.html">contact me</a></li>
+                    </ul>
+                </li>
+                <li><a href="subpages/portfolio.html">portfolio</a>
+                    <ul class="submenu">
+                        <li><a href="subpages/resume.html">resume</a></li>
+                        <li><a href="subpages/accomplishments.html">awards</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </nav>
+
+        </header>
+
+        <main>
+            <h2>Welcome!</h2>
+            <p>This is a mockup website for a personal, professional portfolio. Content on this website is subject to change.</p>
+            <p>I want every page to have a navigation bar, but on the index page I could have several boxes down here that explain each page and the content you can expect to find on there. For example...</p>
+
+            <!--Heavily subjected to change, esp. layout & content-->
+            <section class="boxes">
+                <hr>
+                <h3>Home</h3>
+                    <p>You're already here!</p>
+                <h3>About Me</h3>
+                    <p>Learn personally about me. </p>
+                <h3>Resume</h3>
+                    <p>View one of my digital resumes. For a full resume, contact me. </p>
+                <h3>Portfolio</h3>
+                    <p> Contains some of my professional work, including publications, awards, and digital graphics. </p>
+                <h3>Email Me</h3>
+                    <p> If you are a potential employer or have questions, you can contact me through a secure form through my website.</p>
+            </section>
+
+            <p>Down below is a footer. I would like to make it much prettier in the future, and much more professional. </p>
+        </main>
+
+        <footer>
+            <hr>
+            <ul class="footerLinks">
+                <li><a href="https://github.com/lsmith223">github</a></li>
+                <li>|</li>
+                <li><a href="subpages/termsOfuse.html">terms of use</a></li>
+            </ul>
+            <div class="copyright">
+                <p>Created for CS1100 Web Development</p>
+                <p>Copyright &copy; 2025 Lauren Smith. Some rights reserved</p>
+            </div>
+        </footer>
+
+    <script>
+        function toggleHamburger() {
+        document.querySelector(".navmenu").classList.toggle("show");
+        }
+   </script>
+
+    </body>
+    
+</html>
