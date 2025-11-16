@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lauren Smith | Portfolio</title>
+        <link rel="stylesheet" href="WebsitePortfolioProject.css">
+    </head>
+
+    <body class="darkBody">
+        <header>
+            <div class="top-banner">Lauren Smith | Portfolio</div>
+            <nav>
+                <!--nav will be repeated on every page-->
+              <div class="hamburger" onclick="toggleHamburger()">☰ menu</div>
+              <ul class="navmenu">
+                <li><a href="index.html">home</a></li>
+                <li><a href="subpages/aboutMe.html">about me</a>
+                    <ul class="submenu">
+                        <li><a href="subpages/emailMe.html">contact me</a></li>
+                    </ul>
+                </li>
+                <li><a href="subpages/portfolio.html">portfolio</a>
+                    <ul class="submenu">
+                        <li><a href="subpages/resume.html">resume</a></li>
+                        <li><a href="subpages/accomplishments.html">awards</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </nav>
+
+        </header>
+
+        <main class="darkMain">
+            <h2 class="textHeader">WELCOME!</h2>
+            <p class="aboutText">This is a mockup website for a personal professional portfolio. This website aims to be more than just a resume: it provides a broader, more detailed information on my professional pursuits in an organized manner while showing off some of my coding skills at the same time. Additionally, the website can be updated as I learn more advanced coding knowledge, and when I graduate I will have a base to use if I want to create my own website or professional portfolio.</p>
+            <p class="aboutText">On this website, you can find information about me, view my resume or portfolio, and view listed accomplishments. There is also a contact me form that functions as emailing me through a form on website. In its correct state, it is not functionable, but is rather a proof of concept. </p>
+
+            <hr>
+            <h2 class="textHeader">directory</h2>
+
+
+            <section class="directoryContainer">
+                <div>
+                    <h3>Home</h3>
+                        <p>You're already here!</p>
+                </div>
+
+                <div>
+                    <h3>About Me</h3>
+                        <p>Learn personally about me. </p>
+                </div>
+
+                <div>
+                    <h3>Resume</h3>
+                        <p>View one of my digital resumes. For a full resume, contact me. </p>
+                </div>
+
+                <div>
+                    <h3>Portfolio</h3>
+                        <p> Contains some of my professional work, including publications, awards, and digital graphics. </p>
+                </div>
+
+                <div>
+                    <h3>Awards</h3>
+                        <p>List of my awards, accomplishments, and certifications. </p>
+                </div>
+
+                <div>
+                    <h3>Email Me</h3>
+                        <p> If you are a potential employer or have questions, you can contact me through a secure form through my website.</p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <hr>
+            <ul class="footerLinks">
+                <li><a href="https://github.com/lsmith223">github</a></li>
+                <li>|</li>
+                <li><a href="subpages/termsOfuse.html">terms of use</a></li>
+                <li>|</li>
+                <li><button type="button" id="darkButton">Dark Mode</button></li>
+            </ul>
+            <div class="copyright">
+                <p>Created for CS1100 Web Development</p>
+                <p>Copyright &copy; 2025 Lauren Smith. Some rights reserved</p>
+            </div>
+        </footer>
+
+    <script>
+        function toggleHamburger() {
+        document.querySelector(".navmenu").classList.toggle("show");
+        }
+
+        // TO - DO :  add an event listener for every single div box inside directory container
+        // if a specific div box is clicked, (anywhere within the div box) then redirect to that subpage
+   </script>
+
+    </body>
+    
+</html>

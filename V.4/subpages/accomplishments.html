@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lauren Smith | Portfolio</title>
+        <link rel="stylesheet" href="../WebsitePortfolioProject.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="top-banner">Lauren Smith | Portfolio</div>
+            <nav>
+                <div class="hamburger" onclick="toggleHamburger()">☰ menu</div>
+                <ul class="navmenu">
+                <li><a href="../index.html">home</a></li>
+                <li><a href="aboutMe.html">about me</a>
+                    <ul class="submenu">
+                        <li><a href="emailMe.html">contact me</a></li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html">portfolio</a>
+                    <ul class="submenu">
+                        <li><a href="resume.html">resume</a></li>
+                        <li><a href="accomplishments.html">awards</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2 class="textHeader">awards</h2>
+            <ul class="awardsContainer">
+                <li>Dean's List Receipient for all semesters at Kirkwood Community College</li>
+                <li>Iowa Seal of Working Biliteracy in Spanish</li>
+                <li>Lifetime Member of Phi Theta Kappa Honor Society</li>
+                <li>Graduated from Prairie High School with Honors, and a GPA of 4.0+</li>
+                <li>Graduated from Kirkwood Community College with a GPA of 3.7</li>
+                </ul>
+        </main>
+
+        <footer>
+            <hr>
+            <ul class="footerLinks">
+                <li><a href="https://github.com/lsmith223">github</a></li>
+                <li>|</li>
+                <li><a href="termsOfuse.html">terms of use</a></li>
+                <li>|</li>
+                <li><button type="button" id="darkButton">Dark Mode</button></li>
+            </ul>
+            <div class="copyright">
+                <p>Created for CS1100 Web Development</p>
+                <p>Copyright &copy; 2025 Lauren Smith. Some rights reserved</p>
+            </div>
+        </footer>
+
+        <script>
+            function toggleHamburger() {
+                document.querySelector(".navmenu").classList.toggle("show");
+        }
+        </script>
+
+    </body>
+</html>

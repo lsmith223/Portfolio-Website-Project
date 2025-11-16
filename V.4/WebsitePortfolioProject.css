@@ -1,0 +1,553 @@
+
+
+
+/*Navigation bar - all pages*/
+.top-banner{
+    text-align: center;
+    background-color: #3E4149;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-size: 30px;
+    font-variant: normal;
+    box-shadow: 2px 2px 5px 1px #2e2f33;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav{
+    background-color: #2e2f33;
+    display: flex;
+    text-align: center;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    width: 100%;
+    text-decoration: none;
+    box-shadow: 0px 0px 2px 0px #2e2f33;
+    font-variant: small-caps;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navmenu{
+    display: flex;
+    width: 50%;
+    font-size: 23px;
+    flex-direction: row;
+    list-style: none;
+    gap: 3em;
+    padding: 0;
+    margin: 0;
+}
+
+/* navbar scaling on smaller widths to make sure text has enough room to be on one line*/
+@media(max-width: 920px){
+    .navmenu{
+        width: 85%;
+    }
+}
+
+
+.navmenu li{
+    position: relative;
+    flex: 1; /* allows submenu and menu li boxes to be equal, so navbar links can be aligned properly to the center*/
+}
+
+.navmenu li:hover{
+    text-decoration: underline #efbfd0;
+}
+
+
+.submenu li:hover{
+    text-decoration: underline #b27d94;
+}
+
+ul.navmenu li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+ul.submenu{
+    background-color:#2e2f33;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    display: none;
+    width: 100%;
+    top: auto;
+    top: 35px;
+}
+
+.submenu li{
+    display: flex;
+    flex-direction: column;
+}
+
+li:hover ul.submenu{
+    display: block;
+}
+
+.hamburger{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.navmenu.show{
+    display: block;
+   }
+
+@media (max-width: 600px){
+    header{
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto; 
+    }
+
+    body{
+        padding-top: 80px;
+        margin: 0;
+    }
+    
+    .top-banner{
+        background-color: #2e2f33;
+        font-size: 20px;
+        text-align: center;
+        margin: 0px;
+        padding: 10px;
+        box-shadow: none;
+
+    }
+    
+    nav{
+        position: relative;
+        flex-direction: column;
+        gap: .5em;
+        height: auto; 
+        padding: 5px;
+        margin: 0;
+        width: 100%;
+        background-color: #2e2f33;
+        box-shadow: none;
+        z-index: 1000;
+    }
+
+    .navmenu{
+        display: none;
+        position: absolute;
+        background-color: #2e2f33;
+        top: 100%;
+        padding: 5px;
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        opacity: 90%;
+    }
+
+    .navmenu li a{
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .hamburger{
+        display: block;
+        margin-left: 10px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    ul.submenu{
+        display: block;
+        position: static;
+        background-color: #2e2f33;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    ul.submenu li a{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        
+    } 
+}
+
+/*General CSS - All pages */
+body{
+    height: 100%;
+    margin: 0;
+    background-color: #f4cddb;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 10px 1px #c49cab;
+    border-color: #efbfd0;
+    border-style: outset
+}
+
+main h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+main h3{
+    text-align: center;
+    font-size: 22px;
+}
+
+main p{
+    font-size: 15.5px;
+}
+
+
+.textHeader{
+    letter-spacing: 10px;
+    font-variant: small-caps;
+    font-size: 2.1rem;
+    text-shadow: 1px 1px 0px #f1acdb;
+}
+
+/* Removes all padding and margins on lists */
+ul, ol, li{
+    margin:0;
+    padding:0;
+}
+
+
+/* Footer CSS - all pages*/
+footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #3E4149;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+.footerLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.footerLinks li{
+    list-style: none;
+    position: relative;
+    left: 11px;
+    padding: 1px;
+    margin-bottom: 10px;
+
+
+}
+
+.footerLinks li a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.footerLinks li a:hover{
+    text-decoration: underline #efbfd0;
+}
+.copyright{
+    background-color: #2e2f33;
+    padding: 10px;
+    text-align: center;
+    color: gray;
+}
+
+/* Resume Page CSS*/
+#resume{
+    width: 100%;
+    padding: 0;
+    display: block;
+    margin: auto;
+}
+
+#resumeMain{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Resume image gets bigger/smaller depending on the size of your page, and moves w/ the page when you change the size of web browser*/
+/* Instead of changing size of resume image, change the size of main, so resume fills up all of main and scales automatically*/
+@media(max-width:4000px){
+    #resumeMain{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 1280px){
+    #resumeMain{
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media(max-width: 900px){
+    #resumeMain{
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+/* Terms of Use Page CSS*/
+
+.terms{
+    font-weight: bolder;
+    font-variant: small-caps;
+    text-shadow: 0px 0px 1px;
+    font-size: 1.5rem;
+}
+
+#touMain{
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.tou-text{
+    padding: 20px;
+    color: black;
+}
+
+/* CSS code for about me page */
+
+#about{
+    display: flex;
+}
+
+#aboutPhoto{
+    display: block;
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 40%;
+    height: 40%;
+    border-radius: 5px;
+    border: 1.5px solid #b27d94;
+    box-shadow: 0px 0px 5px gray;
+}
+
+/* used on index page as well */ 
+.aboutText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #edd4dc;
+    text-shadow: 1px 1px 0px #f1acdb;
+    border: 1.5px solid #b27d94;
+    box-shadow: 0px 0px 5px gray;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    line-height: 2;
+    word-spacing: 1;
+    transition: 0.2s;
+}
+
+.aboutText:hover{
+    box-shadow: 0px 0px 5px #3a3a3a;
+
+}
+
+#aboutPhoto:hover{
+    box-shadow: 0px 0px 5px #3a3a3a;
+}
+
+/*Change how the about me page looks depending on width of screen, on smaller screens text appears below image, on bigger screens it will appear to the right of the image*/
+
+/*to do: check how about page looks on a large screen */
+
+@media(max-width:720px){
+    #about{
+        flex-direction: column;
+    }
+    #aboutPhoto{
+        margin: auto;
+        padding: 0px;
+        width: 80%; 
+        margin-bottom: 20px;
+    }
+    main{
+       width: 90%
+        
+    }
+}
+
+/* Index Page CSS */
+
+.directoryContainer{
+    display: grid;
+    align-content: center;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 2em;
+    column-gap: 2em;
+    margin: 20px;
+}
+
+.directoryContainer div{
+    cursor: pointer;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    border: 1.5px solid whitesmoke;
+    transition: 0.2s;
+}
+
+.directoryContainer div h3{
+    text-shadow: 1px .5px 0px #b27d94;
+}
+
+
+
+.directoryContainer div:hover{
+    box-shadow: 0px 0px 5px gray;
+    background-color: #edd4dc;
+    border: 1.5px solid #b27d94;
+    text-shadow: 1px 1px 0px #f1acdb;
+    border-radius: 5px;
+}
+
+
+
+/* For smaller screens, make the directory a column instead of a grid */
+@media(max-width: 500px){
+    .directoryContainer{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
+
+/* Accomplishments page CSS */
+
+.awardsContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+@media(max-width: 700px){
+    .awardsContainer{
+        width: 100%;
+    }
+}
+
+
+.awardsContainer li{
+    margin-bottom: 20px;
+    background-color: #edd4dc;
+    border: 1.5px solid #b27d94;
+    text-shadow: 1px 1px 0px #f1acdb;
+    box-shadow: 1px 1px 0px lightgray;
+    font-size: 1rem;
+    list-style: none;
+    border-radius: 5px;
+    padding: 50px;
+    text-align: center;
+}
+
+.awardsContainer li:hover{
+    cursor: default;
+    box-shadow: 1px 1px 0px gray;
+}
+
+/* Portfolio page CSS */
+
+#buttonsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#portfolioContainer{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* put images on top of eachother */
+#portfolioContainer img{
+    opacity: 0;
+    display: none;
+    max-width: 100%; /*prevents image overflow*/
+    transition: 0.3s;
+}
+
+
+button{
+    cursor: pointer;
+    background-color: #2e2f33;
+    color: #b27d94;
+    opacity: 75%;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 25px;
+    font-size: 10px;
+}
+
+/* use this to change the opacity of the images and the button, keep this after the button/img CSS, */
+.opacity{
+    opacity: 1.0;
+    display: block;
+}
+
+#portfolioContainer img.opacity{
+    opacity: 1.0;
+    display: block;
+}
+
+
