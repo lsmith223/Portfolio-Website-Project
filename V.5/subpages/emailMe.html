@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lauren Smith | Portfolio</title>
+        <link rel="stylesheet" href="../WebsitePortfolioProject.css">
+    </head>
+
+    <body>
+        
+        <header>
+            <div class="top-banner">Lauren Smith | Portfolio</div>
+            <nav>
+                <div class="hamburger" onclick="toggleHamburger()">☰ menu</div>
+                <ul class="navmenu">
+                <li><a href="../index.html">home</a></li>
+                <li><a href="aboutMe.html">about me</a>
+                    <ul class="submenu">
+                        <li><a href="emailMe.html">contact me!</a></li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html">portfolio</a>
+                    <ul class="submenu">
+                        <li><a href="resume.html">resume</a></li>
+                        <li><a href="accomplishments.html">awards</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <h2 class="textHeader">email me</h2>
+            <p class="aboutText">Send an email using the form below:</p>
+            <hr>
+            <div class="formContainer"></div>
+            <form id="Emailform" action="#" method="POST">
+                <label for="userEmail" class="labels">Email: </label>
+                <input type="email" class="inputBoxes" name="userEmail" placeholder="enter your email..." required><br>
+                <label for="userName" class="labels">Name: </label>
+                <input type="text" class="inputBoxes" name="userName" placeholder="enter your first and last name..." required><br>
+                <label for="emailSubject" class="labels">Subject: </label>
+                <input type="text" class="inputBoxes" name="emailSubject" placeholder="enter email subject..." required><br>
+                <textarea name="userMsg" id="msg" required>Your message here.</textarea>
+                <hr>
+                <button class="formButton" type="reset" onclick="resetText()">Reset form</button>
+                <button class="formButton" type="submit" onclick="submitText()">Send</button>
+            </form>
+        </main>
+
+        <footer>
+            <hr>
+            <ul class="footerLinks">
+                <li><a href="https://github.com/lsmith223">github</a></li>
+                <li>|</li>
+                <li><a href="termsOfuse.html">terms of use</a></li>
+            </ul>
+            <div class="copyright">
+                <p>Created for CS1100 Web Development</p>
+                <p>Copyright &copy; 2025 Lauren Smith. Some rights reserved</p>
+            </div>
+        </footer>
+
+        <script>
+            function toggleHamburger() {
+                document.querySelector(".navmenu").classList.toggle("show");
+        }
+
+            function resetText(){
+               alert("Form sucessfully reset");
+            }
+            function submitText(){
+                alert("Error Contacting Server");
+
+            }
+        </script>
+    </body>
+</html>

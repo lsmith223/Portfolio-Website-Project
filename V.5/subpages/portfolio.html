@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lauren Smith | Portfolio</title>
+        <link rel="stylesheet" href="../WebsitePortfolioProject.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="top-banner">Lauren Smith | Portfolio</div>
+            <nav>
+                <div class="hamburger" onclick="toggleHamburger()">☰ menu</div>
+                <ul class="navmenu">
+                <li><a href="../index.html">home</a></li>
+                <li><a href="aboutMe.html">about me</a>
+                    <ul class="submenu">
+                        <li><a href="emailMe.html">contact me!</a></li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html">portfolio</a>
+                    <ul class="submenu">
+                        <li><a href="resume.html">resume</a></li>
+                        <li><a href="accomplishments.html">awards</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </nav>
+        </header>
+       
+        <main>
+            <h3 class="textHeader">portfolio</h3>
+            <div id="buttonsContainer">
+                <button id="1" class="opacity photoButtons" onclick="show1()"></button>
+                <button id="2" class="photoButtons" onclick="show2()"></button>
+                <button id="3" class="photoButtons" onclick="show3()"></button>
+                <button id="4" class="photoButtons" onclick="show4()"></button>
+                <button id="5" class="photoButtons" onclick="show5()"></button>
+            </div>
+            
+            <figure id="portfolioContainer">
+                <img id="climatePlan" class="opacity" src="../images/lauensmith-28.jpg" alt="Kirkwood Climate Action Plan Graphic 2025">
+                <img id="laurensRoom" src="../images/resume.jpg" alt="Graphic of my room sign for my dorm">
+                <img id="outstandingGraphic" src="../images/lauensmith-28.jpg" alt="Kirkwood 2025 Outstanding Students Graphic">
+                <img id="housingGraphic" src="../images/lauensmith-28.jpg" alt="Kirkwood Campus Housing Survey Graphic">
+                <img id="2025" src="../images/lauensmith-28.jpg" alt="Kirkwood 2025 Outstanding Students Title Logo">
+            </figure>
+        
+        
+        </main>
+
+        <footer>
+            <hr>
+            <ul class="footerLinks">
+                <li><a href="https://github.com/lsmith223">github</a></li>
+                <li>|</li>
+                <li><a href="termsOfuse.html">terms of use</a></li>
+            </ul>
+            <div class="copyright">
+                <p>Created for CS1100 Web Development</p>
+                <p>Copyright &copy; 2025 Lauren Smith. Some rights reserved</p>
+            </div>
+        </footer>
+
+        <script>
+            function toggleHamburger() {
+                document.querySelector(".navmenu").classList.toggle("show");
+            }
+
+        
+
+            const img1 = document.getElementById("climatePlan");
+            const img2 = document.getElementById("laurensRoom");
+            const img3 = document.getElementById("outstandingGraphic");
+            const img4 = document.getElementById("housingGraphic");
+            const img5 = document.getElementById("2025");
+
+            const button1 = document.getElementById("1");
+            const button2 = document.getElementById("2");
+            const button3 = document.getElementById("3");
+            const button4 = document.getElementById("4");
+            const button5 = document.getElementById("5");
+
+
+            function show1(){
+                disableImages();
+                img1.classList.add("opacity");
+                button1.classList.add("opacity");
+            }
+
+            function show2(){
+                disableImages();
+                img2.classList.add("opacity");
+                button2.classList.add("opacity");
+
+            }
+
+            function show3(){
+                disableImages();
+                img3.classList.add("opacity");
+                button3.classList.add("opacity");
+
+            }
+
+            function show4(){
+                disableImages();
+                img4.classList.add("opacity");
+                button4.classList.add("opacity");
+
+            }
+
+            function show5(){
+                disableImages();
+                img5.classList.add("opacity");
+                button5.classList.add("opacity");
+
+            }
+
+            function disableImages(){
+                    img1.classList.remove("opacity");
+                    button1.classList.remove("opacity");
+                
+                    img2.classList.remove("opacity");
+                    button2.classList.remove("opacity");
+
+                    img3.classList.remove("opacity");
+                    button3.classList.remove("opacity");
+
+                    img4.classList.remove("opacity");
+                    button4.classList.remove("opacity");
+
+                    img5.classList.remove("opacity");
+                    button5.classList.remove("opacity");
+            }
+        </script>
+    </body>
+</html>
